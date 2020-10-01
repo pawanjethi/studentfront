@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practically Live</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<style>
+		.nav-menu > ul > li {
+            position: relative;
+            list-style: none;
+            white-space: nowrap;
+            float: left;
+            height: 18px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+		}
+		.nav-item a {
+			text-decoration: none !important;
+			/* Style for "Doubt? Ask" */
+		  color: #ffffff;
+		  font-weight: 400;
+		}
+		.nav-icon{
+            width: calc(55px + (88 - 55) * ((100vw - 320px) / (1600 - 320)));
+            height: calc(48px + (75 - 48) * ((100vw - 320px) / (1600 - 320)));
+		}
+		.download-now {
+			padding: 45px 32px;
+			position: relative;
+			top: 87px;
+		}
+
+		.download-now {
+			border-radius: 20px;
+			background: #ccc;
+			background-color: #000000;
+			background-image: url(https://res.cloudinary.com/dtsebzfdk/image/upload/v1601120125/Shape_51_copy_mixqnr.png);
+		}
+
+
+#footer .footer-top {
+	padding: 111px 0 30px 0;
+  }
+  footer{
+	  color: #ffffff !important;
+  }
+  #footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h4 {
+	opacity: 0.5;
+	font-size: 20px;
+	line-height: 24px;
+  }
+  
+  #footer .footer-top .footer-contact p {
+	font-family: "Poppins-Medium";
+	font-size: 18px;
+	line-height: 44px;
+  }
+  
+  #footer .footer-top h4 {
+	opacity: 0.5;
+	font-size: 20px;
+	line-height: 24px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	font-size: 18px;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 2px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	line-height: 1;
+	margin-right: 15px;
+	border-radius: 50%;
+	transition: 0.3s;
+  }
+  
+  
+  #footer .copyright {
+	float: left;
+	font-family: Poppins-Medium;
+	font-size: 15px;
+	color: #777777;
+	line-height: 26px;
+  }
+  
+  #footer .credits {
+	float: right;
+	font-size: 13px;
+	color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+	#footer .copyright, #footer .credits {
+	  float: none;
+	  padding: 5px 0;
+	}
+  }
+  .footer-top{
+	  background-image: linear-gradient(to top, #e2252e 0%, #f95961 100%);
+  }
+  .copy p {
+    margin-bottom: 0 !important;
+}
+  footer .copy {
+	  background-color:#d8362f;
+  }
+  .download-now h3{
+    color: #ffffff;
+}
+
+.download-now{
+    padding: 25px;
+    position: relative;
+    top: 87px;
+}
+
+.copy {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.download-now .icon{
+    border : 1px solid rgba(0, 0, 0, 0.5);
+    background-color:#ccc;
+    border-radius: 25px;
+    padding: 12px;
+}
+  .practically{
+    width: 88px;
+    height: 75px;
+}
+  .sales{
+    font-family: "Poppins - Bold";
+    font-size: 20px;
+    font-weight: 600;
+}
+.copy a {
+    color: #ed9b9e;
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 24px;
+}
+a{
+    text-decoration:none !important;
+}
+
+.copy p {
+    color: #ed9b9e;
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 24px;
+}
+  
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<!-- End Header -->
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-xl-10 col-lg-10 col-md-auto">
+				<div class="row">
+					<div class="col">
+						<nav class="navbar nav-menu navbar-expand-lg">
+							<a class="my-auto  navbar-brand" href="#">
+								<img class="img-fluid nav-icon" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601028572/Vector_Smart_Object_jedoml.png"  alt="" loading="lazy">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="my-auto collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav my-auto  ml-auto">
+									<li class="my-auto mx-1 nav-item ">  <a class="nav-link" href="search.php">Doubt? Ask Us  <span class="sr-only">(current)</span></a> </li>
+									<li class="my-auto mx-1 nav-item">   <a class="nav-link" href="live.html">Practically Live  </a> </li>
+									<li class="my-auto mx-1 nav-item">   <a class="nav-link" href="Practically++.html">Practically++  </a> </li>
+									<li class="my-auto mx-1 nav-item">   <a class="nav-link" href="http://staging.corsalite.com/pracontent/docs/class-6th/maths/knowing-our-numbers/" target="_blank">Explore  </a> </li>
+									<li class="my-auto mx-1 nav-item">   <a class="nav-link" href="#">Login  </a> </li>
+									<li  class="my-auto mx-1  nav-item"> <a class="nav-link my-auto  mx-2 navbar-brand" href="#"><img src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601031674/Shape_41_adyxsj.png" width="39" height="9" alt="" loading="lazy"></a></li>
+									<li class="nav-item btn-black"> <a class="nav-link btn golden-btn color px-4" style="box-shadow: none;" href="#contact">Are you a Teacher ?<span style="left: 72.1406px; top: 32px;"></span><span style="left: 91.1406px; top: 28px;"></span><span style="left: 130.141px; top: 16px;"></span></a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container main mb-2">
+		<div class="d-flex align-items-center hero justify-content-center">
+			<div class="text-center w-100">
+				<h1 class="pb-3">
+					L<span class="position-relative d-inline-block"><img src="assets/images/icons/Vector_Smart_Object.png">I</span>VE
+				</h1>
+				<h4 class="white">Did you know?</h4>
+				<h6 class="white">Indian Parents spend about</h6>
+				<div class="row my-3">
+					<div class="col-5 pr-1">
+						<img class="img-fluid float-right" src="assets/images/shape_52.svg">	
+					</div>
+					<div class="col-7 pl-0 align-self-center">
+						<h2 class="golden text-left">25 CRORES</h2>
+					</div>
+				</div>
+				<h6 class="white">annually on tuition fees! Are you one of those too?<br> Well, we can see those heads nodding. </h6>				
+			</div>
+		</div>
+		<div class="text-center pt-5 my-5 white-back">
+			<div class="w-75 mx-auto">
+				<h2>Make room for more than just a classroom!</h2>
+				<p>Don't worry! We've heard you. You no longer have to spend on tuitions and yet worry about not being able to monitor your child's performance, because we bring to you Practically Live, the only place your kid needs to be to go beyond the classroom.</p>				
+			</div>
+			<div class="section-one">
+				<img class="img-fluid" src="assets/images/Vector_Smart_Object_copy.svg">
+			</div>
+		</div>
+		<h2 class="text-center mt-5 mb-4">What's Practically LIVE all about?</h2>
+		<div class="section-two py-4 mb-4 white-back">
+			<div class="row w-75 mx-auto">
+				<div class="col-md-8 col-12 order-md-1 order-2">
+					<h3 class="white">Mastering concepts was never this easy! </h3>
+					<p>Your child now has an expert to go to for revising concepts, getting doubts clarified instantly, practising assignments, solving problems by getting all the best practices and tips and much more. All of this is now, just a click away! </p>
+				</div>
+				<div class="col-md-4 col-12 order-md-2 image order-1 align-self-center">
+					<img class="img-fluid" src="assets/images/Vector_Smart_Object4_copy.svg">
+				</div>
+			</div>
+		</div>
+		<div class="section-three py-4 mb-4">
+			<div class="row w-75 mx-auto">
+				<div class="col-md-4 col-12 image align-self-center">
+					<img class="img-fluid" src="assets/images/Vector_Smart_Object71.png">
+				</div>
+				<div class="col-md-8 col-12 text-right">
+					<h3>Not just classroom curriculum, aptitude & practical skills too</h3>
+					<p>Besides classroom teaching, we aim to achieve their all-round development by enabling classroom teaching, hands-on learning and by guiding them as and when needed through their journey to fulfilling their dreams.</p>
+				</div>				
+			</div>
+		</div>
+		<div class="section-four py-4 mb-4 white-back">
+			<div class="row w-75 mx-auto">
+				<div class="col-md-8 col-12 order-md-1 order-2">
+					<h3 class="white">Mastering concepts was never this easy! </h3>
+					<p class="white">Your child now has an expert to go to for revising concepts, getting doubts clarified instantly, practising assignments, solving problems by getting all the best practices and tips and much more. All of this is now, just a click away! </p>
+				</div>
+				<div class="col-md-4 col-12 order-md-2 image order-1 align-self-center">
+					<img class="img-fluid" src="assets/images/Vector_Smart_Object.png">
+				</div>
+			</div>
+		</div>
+		<div class="text-center experts py-4 mb-4">
+			<h4>Why wait? <br> Book a demo with our expert now!</h4>
+			<h3 class="green mt-2 mb-5">A glimpse of our experts, your child's mentors!</h3>
+			<div class="row">
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+				<div class="col-md-3 mb-4">
+					<img class="img-fluid" src="assets/images/Layer_10.png">
+					<p class="green my-0">Satyanarayan</p>
+					<p class="my-0"><strong>Physics</strong></p>
+					<p class="my-0">IIT Madras</p>
+				</div>
+			</div>
+			<button class="btn golden-btn mt-5">Book A Demo</button>
+		</div>				
+	</div>
+	<div class="container ">
+		<div class="row download-now  justify-content-center">
+			<div class="col ">
+				<div class="row">
+					<div class="col-md-3">
+						<a class="my-auto  navbar-brand" href="#">
+							<img class="img-fluid practically" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601028572/Vector_Smart_Object_jedoml.png" alt="" loading="lazy">
+						</a>
+					</div>
+					<div class="col-4 my-auto">
+						<h3>Did you experience <br>
+							Practically yet ?</h3>
+					</div>
+					<div class="col-3 my-auto"><a class="nav-link btn golden-btn color px-4" style="box-shadow: none;" href="#contact">Download the App Now<span style="left: 72.1406px; top: 32px;"></span><span style="left: 91.1406px; top: 28px;"></span><span style="left: 130.141px; top: 16px;"></span></a></div>
+					<div class="col-auto my-auto"> <img class="icon img-fluid" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601033710/Vector_Smart_Object_1_hdzxor.png" alt=""> </div>
+					<div class="col-auto my-auto"> <img class="icon img-fluid" src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601189013/Vector_Smart_Object_7_rd4kuu.png" alt=""> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="footer-top">
+		  <div class="container pl-lg-5">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 footer-links right aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+					<ul>
+						  <li><a href="#" data-toggle="modal" data-target="#login_view">Login</a></li>
+						   <li><a href="https://www.practically.com/influencer/#">Influencer</a></li>
+								   
+						 <li><a href="#">Pricing</a></li>
+						 <li><a href="#">Teachers</a></li>
+						 <li><a href="#">About Us</a></li>
+							   <li><a href="#">Blog</a></li>
+								  <li><a href="#">News</a></li>
+					  <li><a href="#">FAQs</a></li>
+					 
+					  <li><a href="#">Contact Us</a></li>
+				
+				   
+					</ul>
+				  </div>    
+			  <div class="col-lg-3 col-md-6 col-sm-6 footer-links left aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+				<ul>
+				  <li> <a href="video.php">Videos</a></li>
+				  <li> <a href="simulation.php">Simulations</a></li>
+				  <li> <a href="ar.php">Augmented Reality</a></li>
+				  <li> <a href="virtualReality.php">Virtual Reality</a></li>
+				</ul>
+			  </div>
+	
+		   
+	
+			  <div class="col-lg-3 col-md-6 footer-links aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+				  <h4 class="help mb-0" style="color:#fff;">Need Help?</h4>
+				<p class="mb-0">
+				  You can contact us by phone<br>
+				  <br>
+				  </p><div class="sales">
+					  Sales &amp; Support<br> +91 79959 95554<br>
+	
+				  </div>
+				<p></p>
+			  </div>
+	
+			  <div class="col-lg-3 col-md-7 footer-links aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+				<div class="social-links mt-3">
+				  <a href="https://twitter.com/practicallyapp" class="twitter"><i><img src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601118715/Vector_Smart_Object_3_zknsld.png"></i></a>
+				  <a href="https://www.facebook.com/PracticallyApp/ " class="facebook"><i><img src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601118715/Vector_Smart_Object_4_bificv.png"></i></a>
+				  <a href="https://www.youtube.com/channel/UCJ_GsPmSWOwJic9QC7R8pNw" class="youtube"><i><img src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601118715/Vector_Smart_Object_5_scesvg.png"></i></a>
+				  <a href="https://www.linkedin.com/company/practically" class="linkedin"><i><img src="https://res.cloudinary.com/dtsebzfdk/image/upload/v1601118715/Vector_Smart_Object_6_krae5x.png"></i></a>
+				</div>
+			  </div>
+	
+			</div>
+	
+		  </div>
+		</div>
+	<!-- <div class="copy">
+		<div class="container-fuild d-flex justify-content-center text-center">
+			  <div class="copyright row" style="width: 100%;">
+				  <div  class="col-md-2 col-sm-12 order-2 order-sm-2">
+					  <p>
+					  Practically is a product of <a href="https://www.3rdflix.com/">3rdFlix</a>.
+					  </p>
+				  </div>
+				  <div class="col-md-auto col-sm-4 order-1 order-sm-4" style="padding: 0px;">
+					<span><a href="#">© Copyright 2020 3RDFLIX Visual Effects Pvt. Ltd.</a></span>
+				</div>
+				  <div class="col-md-2 col-sm-4 order-1 order-sm-4" style="padding: 0px;">
+					  <span><a href="#">TERMS OF USAGE</a></span>
+				  </div>
+				  <div class="col-md-2 col-sm-4 order-1 order-sm-4" style="padding: 0px;">
+					  <span><a href="#">PRIVACY POLICY</a></span>
+				  </div>
+				  <div class="col-md-2 col-sm-4 order-1 order-sm-4" style="padding: 0px;">
+					  <span><a href="#">COOKIE POLICY</a></span>
+				  </div>
+			  </div>
+			  <div class="credits">
+			  </div>
+		</div>
+	</div> -->
+	  <div class="copy">
+		  <div class=" container pl-lg-5">
+	
+		  <div class="row">
+			  <div class="col-3">
+				<p>Practically is a product of <a href="">3rdFlix</a> .</p>
+			  </div>
+			  <div class="col-4">
+				<p>© Copyright 2020 3RDFLIX Visual Effects Pvt. Ltd.</p>
+			  </div>
+			  <div class="col-auto">
+				<div class="row">
+					<div class="col-auto"> <p> <a href="">TERMS OF USAGE</a> </p> </div>
+					<div class="col-auto"> <p> <a href="">PRIVACY POLICY</a> </p> </div>
+					<div class="col-auto"> <p> <a href="">COOKIE POLICY </a> </p> </div>
+				</div>
+			  </div>
+		  </div>
+		  </div>
+		</div>
+	
+	</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

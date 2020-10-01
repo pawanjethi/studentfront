@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+</head>
+<body>
+
+<div class="floating-chat">
+    <img class="img-fluid ico" src="img/Curious.gif">
+    <div class="chat">
+        <div class="header">
+            <span class="title">
+                Chat Bot <small>BETA</small>
+            </span>
+            <button>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+                         
+        </div>
+        <ul class="messages">
+            <li class="bot">hi, how may I help you?</li>
+        </ul>
+        <div class="footer">
+            <div class="text-box" contenteditable="true" data-text="Type your question" disabled="true"></div>
+            <button id="sendMessage"><img class="img-fluid" src="img/send-button.svg"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+</body>
+</html>
